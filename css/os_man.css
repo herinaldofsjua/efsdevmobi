@@ -1,0 +1,140 @@
+/* ===== smartPhones =====*/
+
+*{margin:  0; padding 0; font-size: 100%; border:none; outline: none;font-weight: 300;
+box-sizing: border-box; font-family: 'Lato', sans-serif;}
+body{background-color: hotpink;}
+a{text-decoration:none;: ;}
+ul{list-style:none;}
+img{max-width: 100%; }
+
+/* ========= cabecalho ========*/
+.cabecalho{width: 100%; float: left; padding: top:0; left: 0;}
+.cabecalho h3{font-size: 2em; font-family: serif; color: #FF0000; text-align: center; }
+.logo{width: 56px; height: 56px; margin: 5px; float: left; margin-top: 2%; background: url(../icones/logo_smart.png) center center/56px no-repeat;font-size: 0;}
+.btn-menu{width: 70px; height: 70px; float: right;  margin-top: 2%; background: url(../icones/menu_smart_1.png) center center/56px no-repeat; cursor: pointer;}
+.btn-close{width: 70px; height: 70px; float: right; margin-top: 2%; background: url(../icones/menu_smart_2.png) center center/60px no-repeat; cursor: pointer;}
+
+/*  menu   */
+.menu{display:none; width: 100%; height: 100%; position: fixed; background-color: rgba(245,45,45,0.9); top: 0; left: 0;}
+.menu ul{font-size: 1.5em; padding-top: 20%; color: #fff;text-align: center;}
+.menu li{ padding: 1.5% }
+.menu li a{ font-size: 1em; color: #fff; padding: 1.5% 3%; text-align: center;}
+.menu li a:hover{ border: 1px solid #770000;}
+
+/*    banner   */
+.banner{ width: 100%; height: 90;%; float: all;  background: url(../icones/banner_os_man.png)center center/90% no-repeat; padding-top: 80%;}
+.app h1{text-align: center; font-size: 4em; font-weight: 400; color: darkred;}
+.tittle h2{text-align: center; font-size: 1.5em; font-weight: 300; color: indianred;}
+
+
+/* Galeria de fotos */
+.app h2{text-align: center; font-size: 1em;font-weight: 700; color: darkblue; padding-top: 10%;}
+.fotoD{width: 100%; float: left; padding: 3%;}
+.fotoE{width: 100%; float: right; padding: 3%;}
+.fotoD img{width: 60%;  padding-top: 1%; transition: 1s;}
+.fotoE img{width: 60%;  padding-top: 1%; transition: 1s;}
+.fotoD img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.02);
+}
+.fotoE img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.02);
+}
+.fotoD p{font-size: 1em; color: cyan; text-align: center; margin-bottom: 10%;}
+.fotoE p{font-size: 1em; color: cyan; text-align: center; margin-bottom: 10%;}
+
+/*    rodapé    */
+
+.rodape{width: 100%; float: left;padding: 1% 2%; text-align: center;}
+.rodape a{font-size: 1em; color: #fff; float: left; padding: 1%; color: rgba(255,255,255,1.0);}
+.rodape a:hover{color: rgba(255,45,45);}
+.facebook{width: 20px; height: 20px; float: left; background: url(../icones/facebook-icon.png)center center/20px no-repeat; padding: left 4%;}
+.instagram{width: 20px; height: 20px; float: left; background: url(../icones/instagram-icon.png)center center/20px no-repeat; padding: left 4%;}
+
+
+/* ------- Tablet   -------- */
+
+@media screen and (min-width: 510px){
+
+  .logo{width: 56px; right: 56px; margin-top: 2%; background: url(../icones/logo_tb.png) center center/56px no-repeat;font-size: 0;} 
+  .cabecalho h3{font-size: 3em; font-family: serif; color: #FF0000; text-align: center; }
+  .btn-menu{width: 60px; right: 70px; margin-top: 2%; background: url(../icones/menu_tb_1.png) center center/60px no-repeat; cursor: pointer;}
+  .btn-close{width: 60px; right: 70px; margin-top: 2%; background: url(../icones/menu_tb_2.png) center center/60px no-repeat; cursor: pointer;}
+   
+   /*  menu   */
+   .menu{display:none; width: 100%; height: 100%; position: fixed; background-color: rgba(245,45,45,0.9); top: 0; left: 0;}
+   .menu ul{font-size: 1.5em; padding-top: 20%; color: #fff;text-align: center;}
+   .menu li{ padding: 1.5% }
+   .menu li a{ font-size: 1.5em; color: #fff; padding: 1.5% 3%; text-align: center;}
+   .menu li a:hover{ border: 0.5px solid #770000;}
+
+   .banner{ width: 100%; height: 90;%; float: all;  background: url(../icones/banner_os_man.png)center center/90% no-repeat; padding-top: 75%;}
+
+  .app h1{text-align: center; font-size: 4em;font-weight: 700; color: darkred; padding-top: 10%;}
+  .app h2{text-align: center; font-size: 1em;font-weight: 700; color: darkblue; padding-top: 10%;}
+  .fotoD{width: 50%; float: left; padding: 1%; }
+  .fotoE{width: 50%; float: right; padding:  1%;}
+  .fotoD img{width: 100%;  padding-top: 5%; }
+  .fotoE img{width: 100%;  padding-top: 5%;}
+  .fotoD p{font-size: 0.7em; color: cyan; text-align: center; margin-bottom: 10%;}
+  .fotoE p{font-size: 0.7em; color: cyan; text-align: center; margin-bottom: 10%;}
+}
+
+/*=====DESKTOPS======*/
+
+@media screen and (min-width: 950px){
+
+/* ========= cabecalho ========*/
+.cabecalho{width: 100%;  float: left; padding: top:0; left: 0;}
+.cabecalho h3{font-size: 6em; font-family: serif; color: #FF0000; text-align: center; }
+.logo{width: 60px; right: 60px; background: url(../icones/logo_pc.png) center center/60px no-repeat;font-size: 0;} 
+.btn-menu{display: none;}
+.btn-close{display: none;}
+
+/*  menu   */
+.menu{width: auto; height: 50px; line-height: 50px; float: right; background-color: rgba(245,45,45,0.9); top: 0; left: 0; display: block !important; position: static; }
+.menu ul{font-size: 2em; padding-top: 0%; color: #fff;text-align: center;}
+.menu li{padding: 0;float: left;}
+.menu li a{ color: #fff; font-size: 1em; padding-right: 15px; }
+.menu li a:hover{border:none; color: #da6709; }
+
+/*    banner   */
+.banner{ width: 100%; height: 80%; float: all ;   background: url(../icones/banner_os_man.png)center center/80% no-repeat; padding-top: 75%;}
+.tittle{width: 100%; margin-bottom: 5%; }
+.tittle h2{font-size: 2.5em; color: #00008B; font-weight: 600; text-align: center;}
+
+/*    rodapé    */
+.rodape{width: 100%; float: all; padding: 1% 2%; text-align: center;}
+.rodape a{font-size: 1em; color: #fff; float: left; padding: 1%; color: rgba(255,255,255,1.0);}
+.rodape a:hover{color: rgba(255,45,45);}
+.google{width: 20px; height: 20px; float: left; background: url(../icones/google-icon.png)center center/20px no-repeat; padding: left 2%;}
+.facebook{width: 20px; height: 20px; float: left; background: url(../icones/facebook-icon.png)center center/20px no-repeat; padding: left 4%;}
+.instagram{width: 20px; height: 20px; float: left; background: url(../icones/instagram-icon.png)center center/20px no-repeat; padding: left 4%;}
+
+}
+
+/* ------- TVs ----------*/
+
+@media screen and (min-width: 1920px){
+
+
+  .logo{width: 100px; right: 100px; background: url(../icones/logo_tv.png) center center/100px no-repeat;font-size: 0;} 
+  .btn-menu{display: none;}
+  .btn-close{display: none;}
+
+  .banner{ width: 100%; height: 90;%; float: all;  background: url(../icones/banner_os_man.png)center center/90% no-repeat; padding-top: 60%;}
+
+  
+  .menu{width: auto;height: 60px; line-height: 60px;float: right; background-color: rgba(245,45,45,0.5); top: 0; left: 0; display: block !important; position: static; }
+  .menu li{padding: 0;float: left;}
+  .menu li a{ color: #fff; font-size: 1em; padding: 15px; }
+  .menu li a:hover{border:none; color: #da6709; }
+
+  .fotos h1{text-align: center; font-size: 4em;font-weight: 700; color: #fff; padding-top: 10%;}
+  .fotoD{width: 50%; float: left; padding: 10% 5%;}
+  .fotoE{width: 50%; float: right; padding: 10% 5%;}
+  .fotoD img{width: 100%;  padding-top: 5%}
+  .fotoE img{width: 100%;  padding-top: 5%}
+
+}
